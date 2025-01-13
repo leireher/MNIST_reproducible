@@ -59,6 +59,8 @@ def preprocess_data(raw_dir: str, processed_dir: str) -> None:
     train_images = normalize(train_images)
     test_images = normalize(test_images)
 
+    print("Saving processed data...")
+
     torch.save(train_images, f"{processed_dir}/train_images.pt")
     torch.save(train_target, f"{processed_dir}/train_target.pt")
     torch.save(test_images, f"{processed_dir}/test_images.pt")

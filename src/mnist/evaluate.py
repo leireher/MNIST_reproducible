@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import torch
 import typer
-from proiektua.model import MyModel
+from mnist.model import MyModel
 from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
 
